@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const SignUpScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.formContainer}>
         <Text style={styles.title}>Sign Up</Text>
         <TextInput style={styles.input} placeholder="Email" />
@@ -16,14 +17,14 @@ const SignUpScreen = ({ navigation }) => {
           <Text style={styles.switchText}>or Login</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#87CEFA',
+    backgroundColor: '#5078E1',
     justifyContent: 'center',
     alignItems: 'center',
   },
