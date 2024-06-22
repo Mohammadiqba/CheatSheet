@@ -24,7 +24,7 @@ const AccountScreen = () => {
   const handleLogout = () => {
     Alert.alert(
       'Logout',
-      'Are you sure you want to log out?',
+      'Apakah yakin Anda ingin Keluar?',
       [
         {
           text: 'Cancel',
